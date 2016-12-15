@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fonts/stylesheet.css" type="text/css" charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>Java Programming Assignment Guide</title>
+  </head>
+  <body>
+    <div class="gradient"></div>
+    <div class="background-img">
+    <div class="container">
+      <div class="intro">
+        <h1>JAVA PROGRAMMING ASSIGNMENT GUIDE</h1>
+        <div class="intro-box">
+        <p>The following is a small collection of strategies for starting, fixing, and
+           finishing a Java homework assignment. It includes tips, things to remember,
+           and resources you are encouraged to chek out if you ever feel lost during the
+           process. Good luck and have fun programming!</p>
+        </div>
+      </div>
+      <div class="row" id="before">
+        <center><h1>1. Before You Code:</h1></center>
+        <div class="col-md-4">
+          <div class="before-content">
+              <h2>Decide</h2>
+              <div class="content-main">
+              <ul>
+                <li><span>Input</span> needed?</li>
+                <li>Problem-solving <span>process</span>?</li>
+                <li><span>Output</span> expected?</li>
+              </ul>
+            </div>
+            <div class="vert-line"></div>
+            <div class="content-extra">
+              <center><span>Can you categorize the type of problem you have?</span></center>
+              <ul>
+                <li>Mathematical calculation?</li>
+                <li>String manipulation/comparison?</li>
+                <li>Rescursive pattern?</li>
+                <li>Data storage/sorting?</li>
+                <li>Something else? A combination?</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="before-content">
+            <h2>Plan</h2>
+            <div class="content-main">
+              <p>Solve the problem by hand first by outlining it on paper or
+                 drawing it on a white board. Try using:</p>
+                <div class="marker">Drawings</div> <center><i>(flowcharts for data structures)</i></center>
+                <div class="marker">Diagrams</div> <center><i>(UML for classes and inheritance)</i></center>
+                <div class="marker">Pseudocode</div> <center><i>(loops, if-else statements, menus)</i></center>
+              <p>Keep track of the answer you get during this planning stage and
+                 use it to test your program's results later.</p>
+              <p>Break your problem into smaller pieces now, so you can write short,
+                 readable, and reusable methods.</p>
+           </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="before-content">
+            <h2>Document</h2>
+            <div class="content-main" id="ide">
+              <p>/**********************<br>&nbsp;* Write your header,<br>&nbsp;* algorithm, and some
+                 <br>&nbsp;* method headers/stubs<br>&nbsp;* first. You can even<br>&nbsp;* write a comment for
+                 <br>&nbsp;* each big step, and <br>&nbsp;* fill in the code<br>&nbsp;*  below as you go. <br>
+                 &nbsp;*********************/</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="resources">
+        <center><h2>Resources:</h2></center>
+        <div class="col-md-3"></div>
+        <div class="col-md-2">
+          <div class="resource-box">
+            <h4>Online forums and blogs</h4>
+          </div>
+          <div class="resource-box">
+            <h4>Tutorial websites</h4>
+          </div>
+          <div class="resource-box">
+            <h4>Official Java docs</h4>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="resource-box">
+            <h4>Practice problems and self-check</h4>
+          </div>
+          <div class="resource-box">
+            <h4>Class powerpoint slides</h4>
+          </div>
+          <div class="resource-box">
+            <h4>Textbook reference tables</h4>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="resource-box">
+            <h4>Lab aids</h4>
+          </div>
+          <div class="resource-box">
+            <h4>Email teachers</h4>
+          </div>
+          <div class="resource-box">
+            <h4>Office hours</h4>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="during">
+        <center><h1>2. While You Code:</h1></center>
+        <div class="col-md-4">
+          <div class="during-content">
+            <h2>Pretend...</h2>
+            <div class="content-main">
+              <h4>...you're explaining your program to a friend who knows nothing
+                 about programming.*</h4>
+              <img src="img/ducky.png" id="duck">
+              <p id="note">*Sometimes this is called "<a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">rubber duck debugging</a>".
+              <p>Go through the steps of your program and verbally describe what's
+                 happening in each line.</p>
+              <ul>
+                <li>Sometimes just talking through the process will help you catch
+                    an error or realise a flaw in your code's logic.</li>
+                <li>If you have trouble explaining a step, maybe your solution is
+                    overly-complicated--can you break this part down into smaller
+                    pieces? Should you redesign your algorithm?</li>
+                <li>Using clear, descriptive variable and method names makes your
+                    code more self-explanatory.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="during-content">
+            <h2>Imagine...</h2>
+            <div class="content-main">
+              <h4>...the flow of your program's logic.</h4>
+              <p>Can you follow the code from one method call to the next?</p>
+              <p>Can you determine what data is being stored in your objects at
+                 any given moment?</p>
+              <img src="img/flow.png">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="during-content">
+          <h2>Remember...</h2>
+          <div class="content-main">
+            <h4>...to test early and often!</h4>
+            <ul>
+              <li><span>Catch compiler errors:</span> Use the Build Output window
+                  of your IDE to see exactly where your error is located, and a
+                  description of the issue.</li>
+              <li><span>Debug logic errors:</span> For each line of your program,
+                  "step" through the statement and see what data is stored in each
+                  variable, tracing through branching statements and loops. You
+                  can track your program's values by using a debugger or print
+                  statements to display the info.</li>
+              <li><span>Test your results:</span> Do your methods return the
+                  values you expected? Compare these results to the answers you
+                  calculated when you manually solved your problem.
+              </li>
+              <img src="img/debug.png" id="bug">
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="row" id="common-errors">
+          <h2 id="error">Common compiler errors:</h2>
+          <table class="table-striped">
+            <tr>
+              <td class="left-col">Unbalanced brackets</td>
+              <td>Close all your {}, [], and ()!</td>
+            </tr>
+            <tr>
+              <td class="left-col">Missing method parameters</td>
+              <td>When you call a method, don't forget its list of parameters.<br>
+                  If there are none, you still need the empty ().</td>
+            </tr>
+            <tr>
+              <td class="left-col">Misspelled variable names</td>
+              <td>When you get a "symbol not found" error, it might be this.<br>
+                  Remember that variable names are case-sensitive!</td>
+            </tr>
+            <tr>
+              <td class="left-col">Missing import statements</td>
+              <td>Sometimes your "symbol not found" error is this too.</td>
+            </tr>
+            <tr>
+              <td class="left-col">Assignment vs. comparison operator</td>
+              <td>When comparing terms for an if statement or boolean, use "==".<br>
+                  When assigning a value to a variable, use "=".</td>
+            </tr>
+            <tr>
+              <td class="left-col">Static vs. instance methods</td>
+              <td>Static--can call these using the class name, with no object.<br>
+                  Instance--use must first instantiate an object of the class and
+                  then use it to call the method.</td>
+            </tr>
+            <tr>
+              <td class="left-col">Forgotten or unneccessary semi-colons</td>
+              <td>Use semi-colons inside for statement conditions, not after.<br>
+                  Use a semi-colon at the end of a do-while condition, not a while.</td>
+            </tr>
+            <tr>
+              <td class="left-col">Missing break statement</td>
+              <td>Don't forget these for each case in your switch statement, unless
+                  you want the upper case to also execute the statements in the
+                  one below it.</td>
+            </tr>
+            <tr>
+              <td class="left-col">Uninitialized variables</td>
+              <td>If you get this error, be sure to set your variables to some
+                  temporary default value after you declare them.</td>
+            </tr>
+            <tr>
+              <td class="left-col">Incorrect file name</td>
+              <td>File name should be same as class name and end with ".java".</td>
+            </tr>
+          </table>
+      </div>
+      <div class="row" id="after">
+        <center><h1>3. After You Code:</h1></center>
+        <div class="col-md-4">
+          <div class="after-content">
+            <h2>Check your requirements!</h2>
+            <div class="content-main">
+            <ul>
+              <li>Did you get the output you expected?</li>
+              <li>Is it formatted correctly?</li>
+              <li>Did you properly document your code?</li>
+              <li>(Don't forget print screens!)</li>
+            </ul>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="after-content">
+            <h2>Can you<br>optimize?</h2>
+            <div class="content-main">
+              <p>Can you simplify your code or break it down into more reusable
+                 sub-methods to prevent repetitive statements?</p>
+              <p>Could your program be more user-friendly?</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="after-content">
+            <h2>What did<br>you learn?</h2>
+            <div class="content-main">
+            <p>Make note of the things you learned from the assignment--maybe
+               something that didn't make sense in class is now way more
+               understandable with this homework example.</p>
+            <p>If you ran into some error that took you forever to fix, consider
+               writing it down to remember the next time you encounter it.</p>
+            <p>Even if you didn't complete the assignment perfectly, be sure to
+               show your work and explain what you learned from the experience!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="conclusion">
+      </div>
+      <div class="footer">
+        <center><p>Java Programming Assignment Guide, created to help CS111 &amp; CS112 students at MiraCosta
+           College<br>2016, Marina Mizar</p></center>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
